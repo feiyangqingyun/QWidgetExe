@@ -524,3 +524,69 @@
 3. 文件名：bin_httpserver.zip
 
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver.gif)
+
+## 十七、 自定义委托全家桶
+### （一）、功能特点
+1. 可设置多种委托类型，例如复选框/文本框/下拉框/日期框/微调框/进度条等。
+2. 可设置是否密文显示，一般用于文本框。
+3. 可设置是否允许编辑，一般用于下拉框。
+4. 可设置是否禁用，一般用来禁用某列。
+5. 可设置数据集合，比如下拉框数据集合。
+6. 提供值变化信号，比方说下拉框值改动触发。
+7. 可设置数据校验自动产生不同的图标。
+8. 支持设置校验列/校验规则/校验值/校验成功图标/校验失败图标/图标大小。
+9. 可设置校验数据产生不同的背景颜色和文字颜色。
+10. 校验规则支持 == > >= < <= != contains,非常丰富。
+11. 复选框自动居中而不是左侧，切换选中状态发送对应的信号。
+12. 可设置颜色委托，自动根据颜色值绘制背景颜色，自动设置最佳文本颜色。
+13. 可设置按钮委托，自动根据值生成多个按钮，按钮按下发送对应的信号。
+14. 当设置了委托列时自动绘制选中背景色和文字颜色。
+15. 根据不同的委托类型绘制，可以依葫芦画瓢自行增加自己的委托。
+16. 所有功能封装成1个类不到500行代码，使用极其方便友好。
+
+### （二）、效果图
+1. 网盘地：[https://pan.baidu.com/s/1uQsDQO5E5crUBN2J-nPeLQ](https://pan.baidu.com/s/1uQsDQO5E5crUBN2J-nPeLQ) 
+2. 提取码：1jkp
+3. 文件名：bin_dbdelegate.zip
+
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_dbdelegate/dbdelegate.gif)
+
+## 十八、 人脸识别综合应用
+### （一）、功能特点
+1. 支持的功能包括人脸识别、人脸比对、人脸搜索、活体检测等。
+2. 在线版还支持身份证、驾驶证、行驶证、银行卡等识别。
+3. 在线版的协议支持百度、旷视，离线版的支持百度，可定制。
+4. 除了支持X86架构，还支持嵌入式linux比如contex-A9、树莓派等。
+5. 每个功能的执行除了返回结果还返回执行用时时间。
+6. 多线程处理，通过type控制当前处理类型。
+7. 支持单张图片检索相似度最高的图片。
+8. 支持指定目录图片用来生成人脸特征值文件。
+9. 可设置等待处理图片队列中的数量。
+10. 每次执行都有成功或者失败的信号返回。
+11. 人脸搜索的返回结果包含了原图+最大相似度图+相似度等。
+12. 人脸比对同时支持两张图片和两个特征值比对。
+13. 相关功能自定义一套协议用于客户端和服务端，可以通过TCP通信进行交互。
+14. 自定义人脸识别协议非常适用于中心一台服务器，现场若干设备请求的场景。
+15. 每个模块全部是独立的一个类，代码整洁、注释完善。
+
+### （二）、自定义人脸识别协议功能
+1. 离线使用，同时支持百度的离线包和嵌入式linux人脸识别静态库。
+2. 支持多个连接并发，自动排队处理，返回的时候带上唯一标识区分。
+3. 传入单张图片返回人脸区域。
+4. 传入单张图片返回人脸特征值。
+5. 传入单张图片或者多张图片返回是否是活体。
+6. 传入两张图片返回比对结果。
+7. 传入两个特征值返回比对结果。
+8. 传入单张图片添加人脸。
+9. 指定唯一标识符删除人脸。
+10. 传入单张照片返回相似度最大的人脸信息。
+11. 修改人脸服务的配置参数比如是否快速查找、人脸占比等。
+
+### （三）、效果图
+1. 网盘地：[https://pan.baidu.com/s/1bbL2ZughZAgfIGrexyN-9g](https://pan.baidu.com/s/1bbL2ZughZAgfIGrexyN-9g) 
+2. 提取码：zkeh
+3. 文件名：bin_video_face.zip
+
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face1.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face2.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face5.gif)
