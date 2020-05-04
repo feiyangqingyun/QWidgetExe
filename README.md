@@ -551,7 +551,7 @@
 
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_dbdelegate/dbdelegate.gif)
 
-## 十八、 人脸识别综合应用
+## 十八、 人脸识别综合应用(在线+离线+嵌入式)
 ### （一）、功能特点
 1. 支持的功能包括人脸识别、人脸比对、人脸搜索、活体检测等。
 2. 在线版还支持身份证、驾驶证、行驶证、银行卡等识别。
