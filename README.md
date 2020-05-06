@@ -590,3 +590,42 @@
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face1.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face2.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face5.gif)
+
+## 十九、 硬件综合应用(热敏打印+身份证+短信猫)
+### （一）、串口热敏打印
+1. 标准热敏打印协议解析，无依赖，支持任意系统。
+2. 可打印各种文字信息比如访客单、报警信息等。
+3. 可打印条形码即一维码。
+4. 可打印二维码，设置二维码尺寸。
+5. 支持多线程打印图片。
+6. 可设置打印机的工作模式 0-标准模式 1-翻页模式。
+7. 可设置各种边距比如行间距、字符间距、左边距等。
+8. 可设置字体信息、字符集、文字对齐、加粗等。
+9. 可设置串口号和波特率，不同厂家波特率可能不一致。
+
+### （二）、身份证阅读器
+1. 标准身份证阅读协议解析，无依赖，支持任意系统。
+2. 可读取身份证文字信息，比如姓名、性别、名族等。
+3. 可读取身份证头像，不同厂家库不一样。
+4. 文字信息返回一个信号，头像一个信号，完美。
+5. 支持嵌入式linux系统，包括32位64位。
+6. 整体流程就是寻找身份证、选取身份证、读身份证信息。
+
+### （三）、短信猫调试器
+1. 标准AT命令协议解析，无依赖，支持任意系统。
+2. 可设置收发短信模式 0-text模式 1-pdu模式。
+3. 可批量发送短信以及支持长短信发送。
+4. 可指定序号读取短信和删除短信。
+5. 可一次性删除所有短信。
+6. 可检测设备是否运行正常。
+7. 支持中文短信发送。
+8. 支持拨打电话+挂断电话+接听来电。
+9. 可识别用户按键反馈，比如电话另一端按下了什么按键。
+10. 支持批量发送给多个号码。
+
+### （四）、效果图
+1. 网盘地：[https://pan.baidu.com/s/1uQsDQO5E5crUBN2J-nPeLQ](https://pan.baidu.com/s/1uQsDQO5E5crUBN2J-nPeLQ) 
+2. 提取码：1jkp
+3. 文件名：bin_hard.zip
+
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_hard/hard.gif)
