@@ -1,6 +1,8 @@
 ﻿1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载（下面都给出了网盘地址）。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
+4. **视频相关作品体验地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf**
+5. **其他相关作品体验地址：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q**
 
 ## 一、自定义控件大全
 ### （一）、控件介绍
