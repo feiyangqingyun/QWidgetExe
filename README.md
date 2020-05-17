@@ -216,12 +216,12 @@
 2. 提取码：1jkp
 3. 文件名：bin_TB.zip
 
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/0.png)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/1.png)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/2.png)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/3.png)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/4.png)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/5.png)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/0.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/1.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/2.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/3.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/4.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_TB/5.jpg)
 
 ## 七、视频监控内核
 ### （一）、vlc内核
