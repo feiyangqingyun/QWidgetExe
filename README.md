@@ -421,22 +421,25 @@
 
 ## 十五、 百度地图综合应用（在线+离线+区域+下载）
 ### （一）、省市区域地图封装类功能特点
-1. 同时支持闪烁点图、迁徙图、区域地图、仪表盘等。
+1. 同时支持闪烁点图、迁徙图、区域地图、世界地图、仪表盘等。
 2. 可以设置标题、提示信息、背景颜色、文字颜色、线条颜色、区域颜色等各种颜色。
 3. 可设置城市的名称、值、经纬度 集合。
 4. 可设置地图的放大倍数、是否允许鼠标滚轮缩放。
 5. 内置世界地图、全国地图、省份地图、地区地图，可以精确到县，所有地图全部离线使用。
 6. 内置了各省市json数据文件转js文件功能，如有数据更新自行转换即可，支持单个文件转换和一键转换所有文件。
 7. 内置了从json文件或者js文件获取该区域的所有名称和经纬度信息集合的功能，可以通过该方法获取到信息用来显示。
-8. 依赖浏览器组件显示地图，提供的demo支持webkit、webengine、ie 三种方式加载网页。
-9. 拓展性极强，可以依葫芦画瓢自行增加各种精美的echarts组件，做出牛逼的效果。
-10. 内置的仪表盘组件提供交互功能，demo演示中包含了对应的代码。
-11. 函数接口友好和统一，使用简单方便，就一个类。
-12. 支持任意Qt版本、任意系统、任意编译器。
+8. 依赖浏览器组件显示地图，提供的demo支持webkit/webengine/miniblink/ie 多种方式加载网页。
+9. 采用miniblink浏览器内核打通了Qt5.6及后续版本+mingw编译器缺少浏览器模块的遗憾，使得整个项目支持所有Qt版本，亲测4.7到5.15等任意版本。
+10. 闪烁点迁徙图等设置的点支持单独设置颜色。
+11. 提供接口直接获取点击的点相关信息，方便程序联动处理。
+12. 拓展性极强，可以依葫芦画瓢自行增加各种精美的echarts组件，做出牛逼的效果。
+13. 内置的仪表盘组件提供交互功能，demo演示中包含了对应的代码。
+14. 函数接口友好和统一，使用简单方便，就一个类。
+15. 支持任意Qt版本、任意系统、任意编译器。
 
 ### （二）、百度地图封装类功能特点
 1. 同时支持在线地图和离线地图两种模式。
-2. 同时支持webkit内核、webengine内核、IE内核。
+2. 同时支持webkit内核、webengine内核、miniblink内核、IE内核。
 3. 支持设置多个标注点，信息包括名称、地址、经纬度。
 4. 可设置地图是否可单击、拖动、鼠标滚轮缩放。
 5. 可设置协议版本、秘钥、主题样式、中心坐标、中心城市、地理编码位置等。
@@ -446,9 +449,17 @@
 9. 可显示点线面工具，可直接在地图上划线、点、矩形、圆形等。
 10. 可设置行政区划，指定某个城市区域绘制图层，在线地图自动输出行政区划边界点集合到js文件给离线地图使用。
 11. 可静态或者动态添加多个覆盖物。支持点、折线、多边形、矩形、圆形、弧线、点聚合等。
-12. 函数接口友好和统一，使用简单方便，就一个类。
-13. 支持js动态交互添加点、删除点、清空点、重置点，不需要刷新页面。
-14. 支持任意Qt版本、任意系统、任意编译器。
+12. 提供函数接口处理经纬度解析成地址和地址解析成经纬度坐标。
+13. 提供的demo直接可以单独选点执行对应的处理比如路线查询。
+14. 可以拿到路线查询到的点坐标信息集合，比如用于机器人坐标导航等。
+15. 封装了丰富的函数比如删除指定点和所有点，删除指定覆盖物和所有覆盖物等。
+16. 标注点弹框信息可以自定义内容，标准html格式。
+17. 标注点单击事件可选 0-不处理 1-自己弹框 2-发送信号。
+18. 标注点可设置动画效果 0-不处理 1-跳动 2-坠落
+19. 标注点可设置本地图片文件等。
+20. 函数接口友好和统一，使用简单方便，就一个类。
+21. 支持js动态交互添加点、删除点、清空点、重置点，不需要刷新页面。
+22. 支持任意Qt版本、任意系统、任意编译器。
 
 ### （三）、离线地图下载类功能特点
 1. 多线程同步下载多级别瓦片地图，不卡界面。
@@ -465,13 +476,23 @@
 12. 函数接口友好和统一，使用简单方便，就一个类。
 13. 支持任意Qt版本、任意系统、任意编译器。
 
-### （四）、效果图
+### （四）、省市轮廓下载类功能特点
+1. 定时器排队下载省市轮廓图点坐标集合存储到JS文件。
+2. 支持一个行政区域多个不规则区域下载。
+3. 自动计算行政区域的下载轮廓数量。
+4. 可精确选择省份、市区、县城，也可直接输入行政区域的名称。
+5. 可以设置下载间隔、随时开始下载和停止下载。
+6. 提供编辑边界功能，可以直接在地图上编辑好不规则区域的点集合，然后获取边界点集合数据，这个可以用来自己绘制区域拿到数据，比如某个乡镇甚至某个小区的行政区域数据，很牛逼。
+
+### （五）、效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_echart_win.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win1.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win2.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win3.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win4.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_download_win.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_echart_ubuntu.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_ubuntu.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_download_ubuntu.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_boundary_win.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_demo_win.gif)
 
 ## 十六、 网络请求客户端/服务器
 ### （一）、功能特点
