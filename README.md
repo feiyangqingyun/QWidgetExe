@@ -139,6 +139,9 @@
 
 ### （二）、效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/0.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/1.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/2.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/3.gif)
 
 ## 五、视频监控系统
 ### （一）、功能特点
