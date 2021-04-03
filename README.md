@@ -655,3 +655,60 @@ onvif的处理流程：
 
 ### （四）、效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_hard/hard.gif)
+
+## 二十、 雨田哥作品专区
+### （一）、雷达模拟仿真工具
+1. 支持音频频谱显示
+2. 支持任意随机添加模拟点
+3. 支持自定义添加模拟点
+4. 支持方位，航向角，距离，速度，目标体真实图自定制
+5. 支持危险区域范围显示
+6. 支持激光发射模拟
+7. 支持雷达图放大缩小显示
+8. 支持模拟点编辑设置
+9. 支持模拟点跟踪线设置
+10. 支持模拟点详细数据查看
+11. 支持自定义换肤
+
+### （二）、录音播放控件
+1. 使用FMOD音频引擎开发，支持跨平台，虚拟频道，插件设计。
+2. 数字回放，多个声卡，多路输出，多路输入。
+3. 自定义回放延迟，网络特性。
+4. 支持类型：DLS、M3U、ASX、WAX、PLS、AIFF、ASF、FLAC、FSB、MOD、MP2、MP3、OGG、RAW、S3M、WAV、WMA、XM、VAG。可以说是相当的牛逼。
+5. 录音(自动保存WAV文件) 实时播放。
+6. 支持声道，采样频率等设置。
+7. 播放音频文件。
+8. 音频频谱图显示。
+9. 音频瀑布频谱图显示。
+10. 背景色，频谱色可调。
+11. 录音时长，音频文件播放时长显示。
+12. 支持开始录音，暂停录音，停止录音操作。
+
+### （三）、PDF阅读器
+1. 仿WPS界面。
+2. 预览PDF文件。
+3. 支持PDF预览放大，缩小。
+4. 支持目录预览查看。
+5. 支持目录点击跳转页查看。
+6. 支持页数指定跳转。
+7. 支持上一页，下一页，首页，尾页跳转。
+8. 支持鼠标拖拽滑动预览。
+9. 支持换肤。
+10. 动画Tab页。
+11. 支持实际大小，适合页面，适合宽度预览跳整。
+12. 支持工具栏，类目栏拖拽位置调整，隐藏。
+13. 可定制各种功能。
+
+2.0.0.0版本功能
+
+1. 支持Mac， Linux， Windows平台环境；
+2. 增加实际大小，页面，窗口宽度比例调节设置；
+3. 增加窗口拖拽，拉伸；
+4. 增加PDF预览修改功能；
+5. 选择工具-选中文本进行剪贴板的复制，粘贴操作；
+6.  增加文本选中，高亮，下划线，删除线编辑操作；
+
+### （四）、效果图
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/radar1.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/audiorecord.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/pdfreader1.gif)
