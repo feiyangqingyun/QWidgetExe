@@ -9,26 +9,21 @@
 郑重声明：未经本人许可不可将本项目源码扩散，如有发现本人将追究法律责任，谢谢配合。
 
 欢迎各位访问主页，持续更新和完善：
-1. 国内站点：
-[https://gitee.com/feiyangqingyun/](https://gitee.com/feiyangqingyun/)
-2. 国际站点：
-[https://github.com/feiyangqingyun/](https://github.com/feiyangqingyun/)
-3. 个人主页：
-[https://blog.csdn.net/feiyangqingyun/](https://blog.csdn.net/feiyangqingyun/)
+1. 国内站点：https://gitee.com/feiyangqingyun/
+2. 国际站点：https://github.com/feiyangqingyun/
+3. 个人主页：https://blog.csdn.net/feiyangqingyun/
 4. 知乎主页：https://www.zhihu.com/people/feiyangqingyun
 5. 产品主页：https://blog.csdn.net/feiyangqingyun/article/details/97565652
 
-
-
-0.3 功能特点
-0.3.1 软件模块
+### 0.3 功能特点
+#### 0.3.1 软件模块
 1. 视频监控模块，各种停靠小窗体子模块，包括设备列表、图文警情、窗口信息、云台控制、预置位、巡航设置、设备控制、悬浮地图、网页浏览等。
 2. 视频回放模块，包括本地回放、远程回放、设备播放、图片回放、视频上传等。
 3. 电子地图模块，包括图片地图、在线地图、离线地图、路径规划等。
 4. 日志查询模块，包括本地日志、设备日志等。
 5. 系统设置模块，包括系统设置（基本设置、视频参数、数据库设置、地图配置、串口配置等）、录像机管理、摄像机管理、轮询配置、用户管理等。
 
-0.3.2 基础功能
+#### 0.3.2 基础功能
 1. 支持各种视频流（rtsp、rtmp、http等）、视频文件（mp4、rmvb、avi等）、本地USB摄像机播放。
 2. 支持多画面切换，包括1、4、6、8、9、13、16、25、36、64画面切换。
 3. 支持全屏切换，多种切换方式包括鼠标右键菜单、工具栏按钮、快捷键（alt+enter全屏，esc退出全屏）。
@@ -56,7 +51,7 @@
 25. 可设置软件中文名称、英文名称、LOGO图标等。
 26. 存储的视频文件支持导出到指定目录，支持批量上传到服务器。
 
-0.3.3 特色功能
+#### 0.3.3 特色功能
 1. 主界面采用停靠窗体模式，各种组件以小模块的形式加入，可自定义任意模块加入。
 2. 停靠模块可拖动任意位置嵌入和悬浮，支持最大化全屏，支持多屏幕。
 3. 双重布局文件存储机制，正常模式、全屏模式都对应不同的布局方案，自动切换和保存，比如全屏模式可以突出几个模块透明显示在指定位置，更具科幻感现代化。
@@ -77,57 +72,58 @@
 
 
 
-0.4 编译说明
+### 0.4 编译说明
+#### 0.4.1 版本说明
 本系统没有说基于哪个Qt版本，由于系统中电子地图模块用到了浏览器模块，所以理论上要求你电脑的Qt版本也有浏览器模块才行（win上Qt5.6以上的版本需要msvc编译器的版本才有，其余系统都会有），如果没有则电子地图模块不可用，但是其余功能全部可用没有任何影响。
 本人亲测4.7、4.8、5.5、5.6、5.7、5.9、5.12、5.13、5.14、5.15等。
 2021-1-6开始集成了miniblink浏览器内核，意味着mingw版本的qt5.6以上版本也全部支持。
 
+#### 0.4.2 注意事项
 1. 可执行文件在源码同级目录的bin目录下。
 2. 编译完成后记得将源码下的file文件夹下的所有文件复制到可执行文件同一目录，如果开启了视频监控，则记得将对应的dll文件复制到可执行文件同一目录，比如采用ffmpeg内核（默认就是ffmpeg）的话，则将下载到的dll_ffmpeg下的所有文件复制到可执行文件同一目录。
 3. 各个操作系统的ffmpeg和vlc编译好的dll以及miniblink的dll下载地址。
-https://pan.baidu.com/s/13LDRu6mXC6gaADtrGprNVA 提取码: ujm7。
+https://pan.baidu.com/s/13LDRu6mXC6gaADtrGprNVA  提取码: ujm7。
 4. 如果是64位的qt则对应的dll时候拷贝dll_ffmpeg4_64目录下的。
 5. 如果使用的ffmpeg3则对应dll目录就是dll_ffmpeg，在ffmpeg.pri文件中可以看到具体启用的是ffmpeg3（支持XP）还是ffmpeg4（不支持XP），默认是ffmpeg4。
 6. 图形字体对照表在doc目录下的Font Awesome Cheatsheet.png  和  IconFont.png，分别对应图形字体类 IconHelper和IconFont。
 7. 如果发现地图打不开，请先确认file目录下的所有文件有没有拷贝过去。
-8. 离线地图可以用网上的瓦片地图下载器下载百度的离线地图放到对应目录即可。或者直接下载网盘中已经下载好的上海市的离线地图。
-https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g 
-提取码：01jf  文件：bin_map_tiles.zip
-使用说明：将压缩包下的两个文件夹复制到对应可执行文件下的config文件夹下，和map.js文件同一级目录。tiles文件夹是街道图，tiles_hybrid文件夹是卫星图。
-默认提供的是上海市徐汇区的瓦片地图，如果自己用万能地图下载器下载的百度地图的瓦片文件，也可以对应替换就行，要注意的是格式，默认是jpg，如果下载的瓦片地图格式是png则需要打开config文件夹下的map_load.js文件，将.jpg改成.png保存即可。
-9. 如果是用vs+qt可能报错 error LNK2026: 模块对于 SAFESEH 映像是不安全的。
+8. 如果是用vs+qt可能报错 error LNK2026: 模块对于 SAFESEH 映像是不安全的。
 解决方法：
 第一步：打开该项目的“属性页”对话框。
 第二步：单击“链接器”文件夹。
 第三步：单击“命令行”属性页。
 第四步：将 /SAFESEH:NO 键入“附加选项”框中，然后点击应用。
-10. 默认用户名admin  密码admin
+9. 默认用户名admin  密码admin
 
+#### 0.4.3 离线地图
+离线地图可以用网上的瓦片地图下载器下载百度的离线地图放到对应目录即可。或者直接下载网盘中已经下载好的上海市的离线地图。
+下载地址：https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g 
+提取密码：01jf  文件名称：bin_map_tiles.zip
+使用说明：
+将压缩包下的两个文件夹复制到对应可执行文件下的config文件夹下，和map.js文件同一级目录。tiles文件夹是街道图，tiles_hybrid文件夹是卫星图。
+默认提供的是上海市徐汇区的瓦片地图，如果自己用万能地图下载器下载的百度地图的瓦片文件，也可以对应替换就行，要注意的是格式，默认是jpg，如果下载的瓦片地图格式是png则需要打开config文件夹下的map_load.js文件，将.jpg改成.png保存即可。
 
+### 0.5 视频格式
+#### 0.5.1 USB摄像头
+内核ffmpeg写法：video=USB2.0 PC CAMERA（具体要看设备名）。
+内核vlc写法：dshow://:dshow-vdev='Default' （或者填USB2.0 PC CAMERA）
+带参数写法：2020-12-12以后增加USB摄像头直接url带分辨率帧率写法，默认分辨率640x480。
+1. video=USB2.0 PC CAMERA|1920x1080|30（表示1920*1080分辨率30帧）
+2. video=USB2.0 PC CAMERA|640x480（表示640*480分辨率）
+3. dshow://:dshow-vdev='Default'|1920x1080（vlc内核1920*1080分辨率）
 
-0.5 视频流格式
-USB摄像头：默认ffmpeg内核为 video=USB2.0 PC CAMERA（具体要看设备名） 如果是vlc内核则为 dshow://:dshow-vdev='Default' （或者填USB2.0 PC CAMERA）
-
-2020-12-12以后增加USB摄像头直接url带分辨率，默认分辨率640x480。
-video=USB2.0 PC CAMERA|1920x1080  video=USB2.0 PC CAMERA|640x480
-dshow://:dshow-vdev='Default'|1920x1080
-
-下面的地址有时候会失效，可以自行网上找找其他的地址。
+#### 0.5.2 网络地址
+下面的地址有时候会失效，可以自行网上找找其他的地址，网络视频地址建议在晚上测试会更流畅。
 大雄兔：rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov
-中央卫视：rtmp://58.200.131.2:1935/livetv/cctv1 – cctv10  视频测试建议在晚上流畅。
+中央卫视1：rtmp://58.200.131.2:1935/livetv/cctv1 – cctv10
 海康萤石：https://hls01open.ys7.com/openlive/6e0b2be040a943489ef0b9bb344b96b8.hd.m3u8
-MP4：http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4
-不同摄像机厂家视频流格式：
-https://blog.csdn.net/qq_38880380/article/details/80652697
-海康：rtsp://admin:worthsen123456@192.168.1.66:554/H.264/ch1/main/av_stream
-带用户名密码验证的视频流地址格式：rstp://admin:1111@192.168.1.14:554/1/1
-卡口摄像机：
-rtsp://admin:12345&192.168.1.64:554/Streaming/Channels/1?transportmode=unicast
-视频文件：
-http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4
-http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4
-http://vfx.mtime.cn/Video/2019/03/17/mp4/190317150237409904.mp4
-http://vfx.mtime.cn/Video/2019/03/14/mp4/190314223540373995.mp4
+视频流格式：https://blog.csdn.net/qq_38880380/article/details/80652697
+
+#### 0.5.3 视频文件
+1. http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4
+2. http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4
+3. http://vfx.mtime.cn/Video/2019/03/17/mp4/190317150237409904.mp4
+4. http://vfx.mtime.cn/Video/2019/03/14/mp4/190314223540373995.mp4
 
 
 0.6 版本说明
