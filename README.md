@@ -1,4 +1,5 @@
-﻿1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
+﻿## 0 前言说明
+1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
 4. **视频相关作品体验地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf**
@@ -150,6 +151,7 @@
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/2.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_bigscreen/3.gif)
 
+
 ## 5 视频监控系统
 ### 5.1 软件模块
 1. 视频监控模块，各种停靠小窗体子模块，包括设备列表、图文警情、窗口信息、云台控制、预置位、巡航设置、设备控制、悬浮地图、网页浏览等。
@@ -201,12 +203,12 @@
 12. 可选多种内核自由切换，ffmpeg、vlc、mpv等，均可在pro中设置。推荐用ffmpeg，跨平台最多，默认提供好了linux和mac平台上编译好的库。
 13. 支持硬解码，可设置硬解码类型（qsv、dxva2、d3d11va等）。
 14. 默认采用opengl绘制视频，超低的CPU资源占用，支持yuyv和nv12两种格式绘制，很牛逼。
-15. 高度可定制化，用户可以很方便的在此基础上衍生自己的功能，比如增加自定义模块，增加运行模式、机器人监控、无人机监控、挖掘机监控、检察院审判监控等。
+15. 高度可定制化，用户可以很方便的在此基础上衍生自己的功能，比如增加自定义模块，增加运行模式、机器人监控、无人机监控、挖掘机监控等。
 16. 支持xp、win7、win10、linux、mac、各种国产系统（UOS、中标麒麟、银河麒麟等）、嵌入式linux等系统。
 17. 注释完整，项目结构清晰，超级详细完整的使用开发手册，精确到每个代码文件的功能说明，不断持续迭代版本。
 
 ### 5.4 效果图
-![avatar](https://gitee.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_system/0.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_system/0.gif)
 
 ## 6 智能安防集中管理平台
 ### 6.1 功能特点
@@ -453,7 +455,7 @@
 ### 11.2 效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_customplot/customplot.gif)
 
-## 12 数据导出到Excel及Pdf和打印数据
+## 12 数据导入导出(xls/pdf)及打印示例
 ### 12.1 功能特点
 1. 原创导出数据机制，不依赖任何office组件或者操作系统等第三方库，尤其是支持嵌入式linux。
 2. 10万行数据9个字段只需要2秒钟完成。
