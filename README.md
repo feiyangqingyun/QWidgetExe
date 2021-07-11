@@ -2,10 +2,11 @@
 1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
-4. **视频相关作品体验地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf**
-5. **其他相关作品体验地址：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q**
-6. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
-7. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
+4. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
+5. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
+6. 自定义控件网页版：[https://feiyangqingyun.github.io/QWidgetDemo/](https://feiyangqingyun.github.io/QWidgetDemo/)
+7. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
+8. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
 
 ## 1 自定义控件大全
 ### 1.1 控件介绍
