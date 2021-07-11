@@ -4,6 +4,8 @@
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
 4. **视频相关作品体验地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf**
 5. **其他相关作品体验地址：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q**
+6. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
+7. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
 
 ## 1 自定义控件大全
 ### 1.1 控件介绍
