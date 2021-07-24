@@ -2,11 +2,12 @@
 1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
-4. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
-5. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
-6. 自定义控件网页版：[https://feiyangqingyun.github.io/QWidgetDemo/](https://feiyangqingyun.github.io/QWidgetDemo/)
-7. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
-8. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
+4. **以下项目已经全部升级支持Qt4.7到Qt6.2所有版本以及后续版本**
+5. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
+6. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
+7. 自定义控件网页版：[https://feiyangqingyun.github.io/QWidgetDemo/](https://feiyangqingyun.github.io/QWidgetDemo/)
+8. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
+9. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
 
 ## 1 自定义控件大全
 ### 1.1 控件介绍
@@ -358,25 +359,31 @@
 
 ## 9 Onvif搜索和云台控制工具
 ### 9.1 功能特点
-1. 广播搜索设备，支持IPC和NVR，依次返回，可选择不同的网卡IP。
-2. 依次获取Onvif地址、Media地址、Profile文件、Rtsp地址。
-3. 可对指定的Profile获取视频流Rtsp地址，比如主码流子码流地址。
-4. 可对每个设备设置Onvif用户信息，用于认证获取详细信息。
-5. 可实时预览摄像机图像。
-6. 支持云台控制，可上下左右调节云台，支持绝对移动和相对移动，可放到和缩小图像远近。
-7. 支持Qt4和Qt5任意Qt版本，亲测Qt4.7.0到Qt5.14.2。
-8. 支持任意编译器，亲测mingw、msvc、gcc、clang。
-9. 支持任意操作系统，亲测xp、win7、win10、android、linux、嵌入式linux、树莓派全志H3等。
-10. 支持任意Onvif摄像机和NVR，亲测海康、大华、宇视、华为、海思芯片内核等，可定制开发。
-11. 支持对指定IP地址及onvif地址进行单播搜索，比如跨网段情况下非常有用。
-12. 支持指定过滤条件过滤搜索设备。
-13. 支持搜索间隔设置，保证所有设备搜索回来，在大量设备现场很有用。
-14. 可对图片参数（亮度、色彩度、饱和度）进行设置。
-15. 支持NTP校时和时间同步设置。
-16. 纯Qt编写，超级小巧轻量，总共约2000行代码，不依赖任何第三方的库和组件，跨平台。
-17. 封装好了通用的数据发送和接收解析的函数，可以非常方便的自行拓展其他Onvif处理。
-18. 工具上提供了收发数据文本框，显示收发的数据，方便查看和分析。
-19. 支持所有Onvif设备，代码工整，接口友好，直接引入pri即可使用。
+1. 广播搜索设备，支持IPC和NVR，依次返回。
+2. 可选择不同的网卡IP进行对应网段设备的搜索。
+3. 依次获取Onvif地址、Media地址、Profile文件、Rtsp地址。
+4. 可对指定的Profile获取视频流Rtsp地址，比如主码流地址、子码流地址。
+5. 可对每个设备设置Onvif用户信息，用于认证获取详细信息。
+6. 可实时预览摄像机图像。
+7. 支持云台控制，可上下左右调节云台，支持绝对移动、相对移动、连续移动三种方式，可对图像拉近拉远。
+8. 支持获取预置位集合、调用预置位、添加预置位、删除预置位等。
+9. 支持图片参数设置，包括亮度、对比度、饱和度、锐度等。
+10. 支持Qt4和Qt6任意Qt版本以及后续Qt版本，亲测Qt4.7.0到Qt6.2。
+11. 支持任意编译器，亲测mingw、msvc、gcc、clang。
+12. 支持任意操作系统，亲测xp、win7、win10、android、linux、嵌入式linux、树莓派全志H3等。
+13. 支持任意Onvif摄像机和NVR，亲测海康、大华、宇视、天地伟业、华为、海思芯片内核等，可定制开发。
+14. 支持对指定IP地址及onvif地址进行单播搜索，比如跨网段情况下非常有用。
+15. 支持指定过滤条件过滤搜索设备。
+16. 支持搜索间隔和搜索策略设置，保证所有设备搜索回来，在大量设备现场很有用（亲测上千个摄像机现场，搜索回来的设备数量比摄像机厂家自带搜索工具还要准确）。
+17. 可对设备进行重启、网络参数获取等。
+18. 支持各种事件订阅、Onvif抓图等操作。
+19. 支持NTP校时和时间同步设置。
+20. 内置了线程实时执行Onvif指令队列，排队最大速度的执行对应的指令，执行结果信号发出。
+21. 采用的最底层的TCP+UDP通信机制，原创最底层协议解析，纯QtWidget编写。
+22. 超级小巧轻量，总共约3000行代码，不依赖任何第三方的库和组件，跨平台。
+23. 封装好了通用的数据发送和接收解析的函数，可以非常方便的自行拓展其他Onvif处理。
+24. 工具上提供了收发数据文本框，显示收发的数据，方便查看和分析。
+25. 支持所有Onvif设备，代码工整，接口友好，直接引入pri即可使用。
 
 ### 9.2 主要功能
 1. 搜索设备，获取设备的信息比如厂家、型号等。
@@ -392,28 +399,37 @@
 11. 获取和设置视频参数和图片参数（亮度、色彩、饱和度）。
 12. 重启设备。
 
-### 9.3 处理流程
+### 9.3 云台说明
+1. x、y、z 范围都在0-1之间。
+2. x为负数，表示左转，x为正数，表示右转。
+3. y为负数，表示下转，y为正数，表示上转。
+4. z为正数，表示拉近，z为负数，表示拉远。
+5. 通过x和y的组合，来实现云台的控制。
+6. 通过z的组合，来实现焦距控制。
+
+### 9.4 处理流程
 1. 绑定组播IP（239.255.255.250）和端口（3702），发送固定的xml格式的数据搜索设备。
 2. 接收到的xml格式的数据解析，得到设备的Onvif地址。
 3. 对Onvif地址发送对应的数据，收到数据取出对应的节点数据。
-4. 请求Onvif地址获取Media地址和Ptz地址和其他地址，Media地址用来获取详细的配置文件，Ptz地址用来云台控制和预置位处理。
-5. ptz控制以及预置位操作处理是对Ptz地址发送对应的数据即可。
+4. 请求Onvif地址获取Media地址和Ptz地址，Media地址用来获取详细的配置文件，Ptz地址用来云台控制。
+5. ptz控制是对Ptz地址发送对应的数据即可。
 6. 设置了用户认证的需要组织用户token信息一块发送，每次都需要作鉴权处理。
-7. 接收到的数据不是标准的xml数据，都是带有前缀命名空间，解析的时候要特别注意。
-8. 每个厂家设备返回的数据未必完全一致，基本上都不一致，但整体框架和填充规则是一致的，部分数据解析的时候可能需要进行模糊查找节点值。
+7. 接收到的数据不是标准的xml数据，带有前缀命名空间，解析的时候要注意。
+8. 每个厂家设备返回的数据未必完全一致，基本上都不一致，需要进行模糊查找节点值。
 9. 特意采用底层协议解析，因为soap太臃肿函数名称太另类，特意做的轻量级的。
 10. 两个必备工具，Onvif Device Manager 和 Onvif Device Test Tool。
 
-### 9.4 使用说明
+### 9.5 使用说明
 1. 必须确认摄像机是支持onvif的摄像机。
 2. 搜索的时候选定正确的网卡，建议同一网段。
 3. 摄像机必须开启了onvif服务，很多摄像机为了安全性考虑默认可能不开启。
 4. onvif用户信息必须正确，一般摄像机onvif功能开启的地方可以添加用户。
 5. 在界面上输入用户名和密码的时候记得在界面中输入，不要在配置文件中输入，配置文件中存储的是密文。
-6. 可以用国际官方工具（Onvif Device Manager 和 Onvif Device Test Tool）进行测试对比。
-7. 国际工具下载地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
+6. 图片参数的范围值有多种：0-100 0-128 0-255 如果发现设置不成功可以把值调小一点试试。
+7. 可以用国际官方工具（Onvif Device Manager 和 Onvif Device Test Tool）进行测试对比。
+8. 国际工具下载地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
 
-### 9.5 效果图
+### 9.6 效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_onvif/video_onvif.gif)
 
 ## 10 控件属性设计器
