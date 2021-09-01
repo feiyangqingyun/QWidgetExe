@@ -707,7 +707,8 @@
 9. 代码框架整洁，注释完整，支持任意Qt版本、任意编译器、任意操作系统。
 
 ### 16.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver1.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver2.gif)
 
 ## 17 自定义委托全家桶
 ### 17.1 功能特点
