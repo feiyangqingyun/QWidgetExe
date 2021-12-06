@@ -1,4 +1,4 @@
-﻿## 0 前言说明
+﻿﻿## 0 前言说明
 1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
@@ -531,14 +531,13 @@
 6. 提供编辑边界功能，可以直接在地图上编辑好不规则区域的点集合，然后获取边界点集合数据，这个可以用来自己绘制区域拿到数据，比如某个乡镇甚至某个小区的行政区域数据，很牛逼。
 
 ### 11.5 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_echart_win.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win1.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win2.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win3.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu_win4.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_download_win.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_boundary_win.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_demo_win.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_echart.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_download.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_boundary.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_marker.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_markers.gif)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_gps.gif)
 
 ## 12 网络请求客户端/服务器
 ### 12.1 功能特点
