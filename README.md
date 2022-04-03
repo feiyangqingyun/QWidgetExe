@@ -1,4 +1,4 @@
-﻿## 0 前言说明
+﻿﻿﻿﻿## 0 前言说明
 1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
 3. **联系方式：QQ：517216493  微信：feiyangqingyun  QQ好友满了推荐加微信**
@@ -687,8 +687,34 @@
 ### 16.2 效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_tcpfile/tcpfile.gif)
 
-## 17 雨田哥作品专区
-### 17.1 雷达模拟仿真工具
+## 17 安卓综合应用示例
+### 17.1 功能特点
+1. 封装了通用的Qt安卓组件，打通了常规与java交互机制。
+2. 动态切换横屏竖屏及获取当前横屏竖屏状态。
+3. 支持手机震动、拨打电话、发送短信。
+4. 支持moketoast临时消息、notify顶部任务栏消息。
+5. 支持安卓系统层的选择文件，包括相册文件、本地图片、本地音频、本地视频、本地联系人等，返回的路径并不是默认的uri而是转换解析后的正确的路径。
+6. 封装了Qt的文件选择及保存对话框，自动根据横屏竖屏调整弹出框大小和位置到适中。
+7. 统一的通用的接收从安卓发过来的数据信号，比如选择文件后的路径、抓拍图片完成等信号通知，通过type区分类型。
+8. 支持打开系统拍照程序，拍照后返回抓拍的原始图片，非缩略图。
+9. 提供调用jar文件示例，调用jar包中的函数，执行返回结果。
+10. 提供camera示例，支持切换前置后置摄像头、支持保存录像文件、可调整焦距、抓拍图片、设置图像拉伸策略、设置画面旋转角度、自动对焦等。
+11. 提供了video示例，可以播放本地音视频文件。
+12. 提供解析二维码示例，可开启自动抓拍识别。
+13. 支持全屏显示，后期增加开机启动、屏幕唤醒、服务进程等功能。
+14. 支持多摄像头同时显示和录像，比如同时3路，前提是系统支持多开摄像头。
+15. 可选图片传输模块，抓拍图片和二维码解析结果发送到服务器，提供图片传输服务器解析示例。
+16. 内置的与java交互示例非常丰富，既有通过实例调用类的方法，也有直接调用静态方法，既有直接调用java内部类，也有通过Java类中转调用方式。
+17. 演示交互示例包括私有方法、公有静态方法、无参数无返回值、有参数无返回值、无参数有返回值、有参数有返回值、多个不同类型参数等。
+
+### 17.2 效果图
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo1.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo2.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo4.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo5.jpg)
+
+## xx 雨田哥作品专区
+### xx.1 雷达模拟仿真工具
 1. 支持音频频谱显示。
 2. 支持任意随机添加模拟点。
 3. 支持自定义添加模拟点。
@@ -712,7 +738,7 @@
 8. 增加歼击机导弹攻击指挥使效果。
 9. 增加指挥使被炸前、中、后三种状态效果。
 
-### 17.2 录音播放控件
+### xx.2 录音播放控件
 1. 使用FMOD音频引擎开发，支持跨平台、虚拟频道、插件设计。
 2. 数字回放、多个声卡、多路输出、多路输入。
 3. 自定义回放延迟、网络特性。
@@ -726,7 +752,7 @@
 11. 录音时长、音频文件播放时长显示。
 12. 支持开始录音、暂停录音、停止录音操作。
 
-### 17.3 PDF阅读器
+### xx.3 PDF阅读器
 1. 仿WPS界面。
 2. 预览PDF文件。
 3. 支持PDF预览放大、缩小。
@@ -749,7 +775,7 @@
 5. 选择工具-选中文本进行剪贴板的复制和粘贴操作。
 6. 增加文本选中、高亮、下划线、删除线编辑操作。
 
-### 17.4 效果图
+### xx.4 效果图
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/radar1.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/radar6.gif)
 ![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/audiorecord.gif)
