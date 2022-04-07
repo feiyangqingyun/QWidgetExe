@@ -711,10 +711,7 @@
 19. 演示交互示例包括私有方法、公有静态方法、无参数无返回值、有参数无返回值、无参数有返回值、有参数有返回值、多个不同类型参数等。
 
 ### 17.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo1.jpg)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo2.jpg)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo4.jpg)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo5.jpg)
+![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo.jpg)
 
 ## xx 雨田哥作品专区
 ### xx.1 雷达模拟仿真工具
