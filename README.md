@@ -2,13 +2,13 @@
 ## 0 前言说明
 1. **下载说明：由于可执行文件比较大，如有需要请到网盘下载。**
 2. **网店地址：https://shop244026315.taobao.com/**
-3. **联系方式：QQ（517216493）微信（feiyangqingyun）推荐加微信**。
-4. **以下项目已经全部升级支持Qt4.7到Qt6.2所有版本以及后续版本**
+3. **联系方式：QQ（517216493）微信（feiyangqingyun）推荐加微信。**
+4. **以下项目已经全部升级支持Qt4.7到Qt6.4所有版本以及后续版本**
 5. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
 6. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
-7. 自定义控件网页版：[https://feiyangqingyun.github.io/QWidgetDemo/](https://feiyangqingyun.github.io/QWidgetDemo/)
-8. 视频监控在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/video_system/](https://feiyangqingyun.github.io/QWidgetDemo/video_system/)
-9. 大屏系统在线文档：[https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.github.io/QWidgetDemo/bigscreen/)
+7. 监控系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/](https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/)
+8. 大屏系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/)
+9. 物联网系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/](https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/)
 
 ## 1 自定义控件大全
 ### 1.1 控件介绍
@@ -35,7 +35,7 @@
 21. 控件源码全部分门别类存放，pri模块形式集成，提供控件对照表快速查找对应控件和说明。
 
 ### 1.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_quc/000.gif)
+![](snap_quc/000.gif)
 
 ## 2 输入法
 ### 2.1 输入法V2018
@@ -85,8 +85,8 @@
 22. 代码结构极为清晰，注释详细，非常容易阅读和理解，同时也可以自行修改拓展自定义的需求。
 
 ### 2.3 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_input/input2018.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_input/input2019.gif)
+![](snap_input/input2018.gif)
+![](snap_input/input2019.gif)
 
 ## 3 视频监控内核
 ### 3.1 ffmpeg内核
@@ -173,8 +173,8 @@
 19. 可定制功能。
 
 ### 3.5 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_ffmpeg/video_ffmpeg1.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_vlc/video_vlc1.gif)
+![](snap_video_ffmpeg/video_ffmpeg1.gif)
+![](snap_video_vlc/video_vlc1.gif)
 
 ## 4 皮肤生成器+UIDemo
 ### 4.1 功能特点
@@ -198,7 +198,7 @@
 7. QChar图形字体的对照表在 图形字体对照表.png。
 
 ### 4.3 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_uidemo/qui.gif)
+![](snap_uidemo/qui.gif)
 
 ## 5 Onvif搜索和云台控制工具
 ### 5.1 功能特点
@@ -273,7 +273,7 @@
 8. 国际工具下载地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
 
 ### 5.6 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_onvif/video_onvif.gif)
+![](snap_video_onvif/video_onvif.gif)
 
 ## 6 控件属性设计器
 ### 6.1 功能特点
@@ -292,7 +292,7 @@
 13. 纯Qt编写，支持任意Qt版本+任意编译器+任意系统。
 
 ### 6.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_property/完整视频.gif)
+![](snap_property/完整视频.gif)
 
 ## 7 自定义曲线图柱状图
 ### 7.1 功能特点
@@ -324,7 +324,7 @@
 26. 支持Qt4-Qt6任意Qt版本,支持任意编译器+任意操作系统。
 
 ### 7.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_customplot/customplot.gif)
+![](snap_customplot/customplot.gif)
 
 ## 8 数据导入导出(xls/pdf)及打印示例
 ### 8.1 功能特点
@@ -356,7 +356,7 @@
 26. 纯Qt编写，支持任意Qt版本+任意编译器+任意系统。
 
 ### 8.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_dataout/dataout.gif)
+![](snap_dataout/dataout.gif)
 
 ## 9 数据库集成应用通用功能
 ### 9.1 功能特点
@@ -446,7 +446,7 @@
 18. 所有功能封装成1个类，核心代码不到500行，使用极其方便友好。
 
 ### 9.7 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_dbtool/dbtool.gif)
+![](snap_dbtool/dbtool.gif)
 
 ## 10 图片及视频TCP/UDP网络传输
 ### 10.1 功能特点
@@ -464,7 +464,7 @@
 12. 采用自定义的xml协议，可以自由拓展其他属性字段比如带上图片内容等。
 
 ### 10.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_image/video_image1.gif)
+![](snap_video_image/video_image1.gif)
 
 ## 11 百度地图综合应用（在线+离线+区域+下载）
 ### 11.1 省市区域地图封装类功能特点
@@ -532,13 +532,13 @@
 6. 提供编辑边界功能，可以直接在地图上编辑好不规则区域的点集合，然后获取边界点集合数据，这个可以用来自己绘制区域拿到数据，比如某个乡镇甚至某个小区的行政区域数据，很牛逼。
 
 ### 11.5 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_echart.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_baidu.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_download.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_boundary.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_marker.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_markers.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_map/map_gps.gif)
+![](snap_map/map_echart.gif)
+![](snap_map/map_baidu.gif)
+![](snap_map/map_download.gif)
+![](snap_map/map_boundary.gif)
+![](snap_map/map_marker.gif)
+![](snap_map/map_markers.gif)
+![](snap_map/map_gps.gif)
 
 ## 12 网络请求客户端/服务器
 ### 12.1 功能特点
@@ -553,8 +553,8 @@
 9. 代码框架整洁，注释完整，支持任意Qt版本、任意编译器、任意操作系统。
 
 ### 12.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver1.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_httpserver/httpserver2.gif)
+![](snap_httpserver/httpserver1.gif)
+![](snap_httpserver/httpserver2.gif)
 
 ## 13 自定义委托全家桶
 ### 13.1 功能特点
@@ -596,7 +596,7 @@
 16. 一个类通用所有支持委托的控件，比如QTableView/QTableWidget/QListView/QTreeWidget/QListWidget等。
 
 ### 13.3 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_dbdelegate/dbdelegate.gif)
+![](snap_dbdelegate/dbdelegate.gif)
 
 ## 14 人脸识别综合应用(在线+离线+嵌入式)
 ### 14.1 功能特点
@@ -630,9 +630,9 @@
 11. 修改人脸服务的配置参数比如是否快速查找、人脸占比等。
 
 ### 14.3 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face1.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face2.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_video_face/video_face5.gif)
+![](snap_video_face/video_face1.gif)
+![](snap_video_face/video_face2.gif)
+![](snap_video_face/video_face5.gif)
 
 ## 15 硬件综合应用(热敏打印+身份证+短信猫)
 ### 15.1 串口热敏打印
@@ -667,7 +667,7 @@
 10. 支持批量发送给多个号码。
 
 ### 15.4 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_hard/hard.gif)
+![](snap_hard/hard.gif)
 
 ## 16 多线程文件传输工具
 ### 16.1 功能特点
@@ -686,7 +686,7 @@
 13. 支持任意Qt版本、任意系统、任意编译器。
 
 ### 16.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_tcpfile/tcpfile.gif)
+![](snap_tcpfile/tcpfile.gif)
 
 ## 17 安卓综合应用示例
 ### 17.1 功能特点
@@ -711,7 +711,7 @@
 19. 演示交互示例包括私有方法、公有静态方法、无参数无返回值、有参数无返回值、无参数有返回值、有参数有返回值、多个不同类型参数等。
 
 ### 17.2 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_android_demo/android_demo.jpg)
+![](snap_android_demo/android_demo.jpg)
 
 ## xx 雨田哥作品专区
 ### xx.1 雷达模拟仿真工具
@@ -776,7 +776,7 @@
 6. 增加文本选中、高亮、下划线、删除线编辑操作。
 
 ### xx.4 效果图
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/radar1.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/radar6.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/audiorecord.gif)
-![avatar](https://github.com/feiyangqingyun/QWidgetExe/raw/master/snap_yutian/pdfreader1.gif)
+![](snap_yutian/radar1.gif)
+![](snap_yutian/radar6.gif)
+![](snap_yutian/audiorecord.gif)
+![](snap_yutian/pdfreader1.gif)
