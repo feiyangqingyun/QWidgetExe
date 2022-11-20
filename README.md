@@ -242,7 +242,7 @@
 ### 4.3 效果图
 ![](snap_uidemo/qui.gif)
 
-## 5 Onvif搜索和云台控制工具
+## 5 视频监控Onvif综合示例
 ### 5.1 功能特点
 1. 广播搜索设备，支持IPC和NVR，依次返回。
 2. 可选择不同的网卡IP进行对应网段设备的搜索。
@@ -315,7 +315,10 @@
 8. 国际工具下载地址：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
 
 ### 5.6 效果图
-![](snap_video_onvif/video_onvif.gif)
+![](snap_video_onvif/video_onvif1.jpg)
+![](snap_video_onvif/video_onvif2.jpg)
+![](snap_video_onvif/video_onvif3.jpg)
+![](snap_video_onvif/video_onvif4.jpg)
 
 ## 6 控件属性设计器
 ### 6.1 功能特点
