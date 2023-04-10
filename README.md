@@ -168,7 +168,8 @@
 16. 支持H265编码（现在越来越多的监控摄像头是H265视频流格式）生成视频文件，内部自动识别切换编码格式。
 17. 自动识别视频流动态分辨率改动，重新打开视频流。
 18. 纯qt+ffmpeg解码，非sdl等第三方绘制播放依赖，gpu绘制采用qopenglwidget，音频播放采用qaudiooutput。
-19. 同时支持ffmpeg2、ffmpeg3、ffmpeg4、ffmpeg5版本，全部做了兼容处理。如果需要支持xp需要选用ffmpeg3及以下。
+19. 同时支持ffmpeg2、ffmpeg3、ffmpeg4、ffmpeg5、ffmpeg6以及后续版本，全部做了兼容处理。如果需要支持xp需要选用ffmpeg3或ffmpeg2。
+20. 支持滤镜，源头带各种水印及图形效果，可以将OSD标签信息和各种图形信息写入到MP4文件。
 
 ### 3.6 内核vlc
 1. 支持各种音视频文件、本地摄像头设备，各种视频流网络流。
@@ -812,3 +813,20 @@
 ![](snap_video_camera/video_camera3.jpg)
 ![](snap_video_camera/video_camera4.jpg)
 ![](snap_video_camera/video_camera5.jpg)
+
+## 20 推流综合应用示例
+### 20.1 文件推流
+1. 指定网卡和监听端口，接收网络请求推送音视频等各种文件。
+2. 实时统计显示每个文件对应的访问数量、总访问数量、不同IP地址访问数量。
+3. 可指定多种模式，0-直接播放、1-下载播放。
+4. 实时打印显示各种收发请求和应答数据。
+5. 每个文件对应MD5加密的唯一标识符，用于请求地址后缀区分访问哪个文件。
+6. 支持各种浏览器（谷歌chromium/微软edge/火狐firefox等）、各种播放器（vlc/mpv/ffplay/potplayer/mpchc等）打开请求。
+7. 播放过程中可以任意切换播放进度，支持倍速播放。
+8. 需要推流的文件名称历史记录自动存储和打开加载应用。
+9. 切换文件获取访问地址，自动拷贝地址到剪切板方便直接粘贴测试使用。
+10. 纯QTcpSocket通信，核心源码不到500行，注释详细，功能完整。
+11. 支持Qt4/Qt5/Qt6任意版本，支持任意系统（windows/linux/macos/android/嵌入式linux等）。
+
+### 20.2 效果图
+![](snap_video_push/video_push.jpg)
