@@ -321,6 +321,8 @@
 ![](snap_video_onvif/video_onvif2.jpg)
 ![](snap_video_onvif/video_onvif3.jpg)
 ![](snap_video_onvif/video_onvif4.jpg)
+![](snap_video_onvif/video_onvif_app1.jpg)
+![](snap_video_onvif/video_onvif_app3.jpg)
 
 ## 6 控件属性设计器
 ### 6.1 功能特点
