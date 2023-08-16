@@ -1,15 +1,16 @@
 
 ## 0 前言说明
-1. **项目作品：[https://blog.csdn.net/feiyangqingyun/article/details/97565652](https://blog.csdn.net/feiyangqingyun/article/details/97565652)**
-2. **网店地址：https://shop244026315.taobao.com/**
-3. **联系方式：QQ（517216493）微信（feiyangqingyun）推荐加微信。**
-4. **公 众 号：Qt教程（民间）  Qt软件（官方）**
-5. **版本支持：所有项目已经全部支持Qt4/5/6所有版本以及后续版本。**
-6. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
-7. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
-8. 监控系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/](https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/)
-9. 大屏系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/)
-10. 物联网系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/](https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/)
+1. **项目作品：[https://qtchina.blog.csdn.net/article/details/97565652](https://qtchina.blog.csdn.net/article/details/97565652)**
+2. **视频主页：[https://space.bilibili.com/687803542](https://space.bilibili.com/687803542)**
+3. **网店地址：[https://shop244026315.taobao.com](https://shop244026315.taobao.com)**
+4. **联系方式：QQ（517216493）微信（feiyangqingyun）推荐加微信。**
+5. **公 众 号：Qt教程（民间）  Qt软件（官方）**
+6. **版本支持：所有项目已经全部支持Qt4/5/6所有版本以及后续版本。**
+7. 监控作品体验：[https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g](https://pan.baidu.com/s/1d7TH_GEYl5nOecuNlWJJ7g) 提取码：01jf
+8. 其他作品体验：[https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A](https://pan.baidu.com/s/1ZxG-oyUKe286LPMPxOrO2A) 提取码：o05q
+9. 监控系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/](https://feiyangqingyun.gitee.io/QWidgetDemo/video_system/)
+10. 大屏系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/](https://feiyangqingyun.gitee.io/QWidgetDemo/bigscreen/)
+11. 物联网系统在线文档：[https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/](https://feiyangqingyun.gitee.io/QWidgetDemo/iotsystem/)
 
 ## 1 自定义控件大全
 ### 1.1 控件介绍
@@ -841,25 +842,27 @@
 3. 支持将本地摄像头设备推流，可指定分辨率和帧率等。
 4. 支持将本地桌面推流，可指定屏幕区域和帧率等。
 5. 自动启动流媒体服务程序，默认mediamtx（原rtsp-simple-server），可选用srs、EasyDarwin、LiveQing、ZLMediaKit等。
-6. 可实时切换预览视频文件。
+6. 可实时切换预览视频文件，可切换视频文件播放进度，切换到哪里就推流到哪里。
 7. 推流的清晰度和质量可调。
 8. 可动态添加文件、目录、地址。
 9. 视频文件自动循环推流，如果视频源是视频流，在掉线后会自动重连。
 10. 网络视频流自动重连，重连成功自动继续推流。
 11. 网络视频流实时性极高，延迟极低，延迟时间大概在100ms左右。
 12. 极低CPU占用，4路主码流推流只需要占用0.2%CPU。理论上常规普通PC机器推100路毫无压力，主要性能瓶颈在网络。
-13. 推流后除了用rtmp地址访问以外，还支持直接hls/webrtc访问，可以直接浏览器打开看实时画面。
+13. 推流可选推流到rtsp/rtmp两种，推流后的数据支持直接rtsp/rtmp/hls/webrtc四种方式访问，可以直接浏览器打开看实时画面。
 14. 可以推流到外网服务器，然后通过手机、电脑、平板等设备播放对应的视频流。
 15. 每个推流都可以手动指定唯一标识符（方便拉流/用户无需记忆复杂的地址），没有指定则按照策略随机生成hash值。
 16. 自动生成测试网页直接打开播放，可以看到实时效果，自动按照数量对应宫格显示。
 17. 推流过程中可以在表格中切换对应推流项，实时预览正在推流的视频，并可以切换视频文件的播放进度。
 18. 音视频同步推流，符合264/265/aac格式的自动原数据推流，不符合的自动转码再推流（会占用一定CPU）。
 19. 转码策略支持三种，自动处理（符合要求的原数据/不符合的转码），仅限文件（文件类型的转码视频），所有转码。
-20. 表格中实时显示每一路推流的分辨率和转码状态，黑色表示没有数据，绿色表示原数据推流，红色表示转码后的数据推流。
-21. 支持Qt4/Qt5/Qt6任意版本，支持任意系统（windows/linux/macos/android/嵌入式linux等）。
+20. **表格中实时显示每一路推流的分辨率和音视频数据状态，灰色表示没有输入流，黑色表示没有输出流，绿色表示原数据推流，红色表示转码后的数据推流。**
+21. **自动重连视频源，自动重连流媒体服务器，保证启动后，推流地址和打开地址都实时重连，只要恢复后立即连上继续采集和推流。**
+22. 提供循环推流示例，一个视频源同时推流到多个流媒体服务器，比如打开一个视频同时推流到抖音/快手/B站等，可以作为录播推流，列表循环，非常方便实用。
+23. 根据不同的流媒体服务器类型，自动生成对应的rtsp/rtmp/hls/flv/ws-flv/webrtc地址，用户可以直接复制该地址到播放器或者网页中预览查看。
+24. 编码视频格式可以选择自动处理（源头是264就264/源头是265就265），转H264（强制转264），转H265（强制转265）。
+25. 支持Qt4/Qt5/Qt6任意版本，支持任意系统（windows/linux/macos/android/嵌入式linux等）。
 
 ### 20.3 效果图
 ![](snap_video_push/video_push_file.jpg)
-![](snap_video_push/video_push_file_web.jpg)
 ![](snap_video_push/video_push_ffmpeg.jpg)
-![](snap_video_push/video_push_ffmpeg_web.jpg)
