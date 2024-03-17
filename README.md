@@ -47,7 +47,6 @@
 32. 支持任意Qt版本（Qt4、Qt5、Qt6），支持任意系统（windows、linux、macos、android、嵌入式linux等）。
 
 ### 1.2 效果图
-![](snap_video_push/video_push_net.jpg)
 ![](snap_video_push/video_push_preview.jpg)
 
 ## 2 监控Onvif组件
