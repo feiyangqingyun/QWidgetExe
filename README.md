@@ -48,6 +48,7 @@
 
 ### 1.2 效果图
 ![](snap_video_push/video_push_net.jpg)
+![](snap_video_push/video_push_preview.jpg)
 
 ## 2 监控Onvif组件
 ### 2.1 功能特点
