@@ -136,6 +136,7 @@
 ![](snap_map/map500.jpg)
 ![](snap_map/map600.jpg)
 ![](snap_map/map700.jpg)
+![](snap_map/map800.jpg)
 
 ## 4 自定义控件大全
 ### 4.1 功能特点
