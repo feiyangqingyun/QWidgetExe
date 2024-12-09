@@ -129,14 +129,14 @@
 12. 支持任意Qt版本、任意系统、任意编译器。
 
 ### 3.3 效果图
-![](snap_map/map100.jpg)
-![](snap_map/map200.jpg)
-![](snap_map/map300.jpg)
-![](snap_map/map400.jpg)
-![](snap_map/map500.jpg)
-![](snap_map/map600.jpg)
-![](snap_map/map700.jpg)
-![](snap_map/map800.jpg)
+![](snap_map/snap/map100.jpg)
+![](snap_map/snap/map200.jpg)
+![](snap_map/snap/map300.jpg)
+![](snap_map/snap/map400.jpg)
+![](snap_map/snap/map500.jpg)
+![](snap_map/snap/map600.jpg)
+![](snap_map/snap/map700.jpg)
+![](snap_map/snap/map800.jpg)
 
 ## 4 自定义控件大全
 ### 4.1 功能特点
@@ -451,8 +451,8 @@
 25. 跨平台，支持windows、linux、mac、嵌入式linux、android、各种国产系统和开发板等。
 
 ### 12.2 效果图
-![](snap_iottool/iot_server1.jpg)
-![](snap_iottool/iot_mqtt.jpg)
+![](snap_iottool/snap/iot_server1.jpg)
+![](snap_iottool/snap/iot_mqtt.jpg)
 
 ## 13 多线程文件传输
 ### 13.1 功能特点
