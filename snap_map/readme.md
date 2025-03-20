@@ -44,8 +44,10 @@ webView->setLayout(ui->gridLayout);
 MapObjBase *mapObj = MapHelper::getMapObj(this, MapCore_BaiDu);
 //传入网页控件用于执行函数
 mapObj->setWebView(webView);
-//加载地图
+//直接加载地图
 mapObj->load();
+//异步加载地图
+//QMetaObject::invokeMethod(mapObj, "load", Qt::QueuedConnection);
 ```
 6. 所有地图相关的函数接口在MapObjBase类中，可以打开mapobjbase.h查看具体说明。
 7. 地图中大部分的功能都是通过执行js函数来触发，比如添加标注、添加折线图等。这些必须严格按照提供的js函数名称和参数来执行。对应示例都提供了相关的调用方法。
@@ -242,14 +244,15 @@ int main(int argc, char *argv[])
 9. 第五步，由于下载服务器可能有并发限制，不能保证所有瓦片地图一次性全部下载成功，尽管程序中有失败重新下载3次的机制，但是也有可能3次都下载失败，所以需要通过鼠标滚所缩放查看，哪个区域空白就表示该区域下载失败，重新下载该区域对应级别的瓦片就好。一般来说，网络正常以及服务器正常的情况下，都是能够完全正常下载成功的。
 
 #### 4.3.4 特别提示
-1. 街道图默认保存到tiles目录，卫星图保存到tiles_hybrid目录，路网图保存到tiles_self目录。
-2. 下载地图建议用多线程，以便最快速度下载，可以在其他设置界面中填入线程数量。
-3. 选择行政区域和可视区域，唯一区别就是，行政区域当填入地名后单击加载按钮，会自动查找该区域所在地图位置，并切换显示。而可视区域是手动调整左侧地图的可视范围内的地图。
-4. 如果提示瓦片数量过多，建议选择可视区域，然后左侧鼠标缩放到合适级别，让要下载的区域刚好填满整个屏幕，这样就不会下载多余的瓦片，往往这些多余的瓦片数量是不需要的。如果瓦片还是过多，建议再细分区域下载，比如一个省的可能太多，逐个按照市区来下载，一般是大级别的才会有很多瓦片。
-5. 天地图每个秘钥每天的下载数量有限制。个人开发者限制在1W张，企业开发者限制在30W张，可以切换到账号后台 https://console.tianditu.gov.cn/api/traffic 查看具体限制。建议多申请几个秘钥，在MapDownHelper::initUrl()函数中加入多个秘钥，下载的时候会自动切换秘钥下载，这样可以下载的张数多一些。还有就是下载的时候尽量分区域下载，不然你都不知道下载到哪里失败了，以便下次继续下载。
-6. 谷歌瓦片地图下载有可能需要翻墙才能使用。
-7. 如果加载下载好的离线地图没有看到，只有一种可能，那就是当前级别当前范围的离线地图没有下载，你需要鼠标滚轮缩放和拖动到你下载的区域和级别才能看到，那问题来了，都没有图片也不知道拖到哪里了，所有就需要下载离线地图的时候，先下载大致的全国地图的轮廓，也不多，比如全国的下载到12级别，这样就可以拖动到对应的省份市区等。
-8. 下载好的地图文件使用方法看本文档中的离线地图使用说明。
+1. 街道图默认保存到tiles目录，卫星图保存到tiles_hybrid目录，路网图保存到tiles_self目录。可能这个目录描述不够准确，后期有可能会调整到更准确的命令，比如街道图 tiles_normal，卫星图 tiles_satellite，混合图 tiles_hybrid。
+2. **天地图比较特殊，他是每一种都分底图和路网图，这样下来也就是有6种，地图类型下拉框是：街道图=矢量底图+矢量注记，卫星图=影像底图+影像注记，地形图=地形底图+地形注记。对应目录是：街道图底图是vec_w，街道图路网是cva_w，卫星图底图是img_w，卫星图路网是cia_w，地形图底图是ter_w，地形图路网是cta_w。**
+3. 下载地图建议用多线程，以便最快速度下载，可以在其他设置界面中填入线程数量。
+4. 选择行政区域和可视区域，唯一区别就是，行政区域当填入地名后单击加载按钮，会自动查找该区域所在地图位置，并切换显示。而可视区域是手动调整左侧地图的可视范围内的地图。
+5. 如果提示瓦片数量过多，建议选择可视区域，然后左侧鼠标缩放到合适级别，让要下载的区域刚好填满整个屏幕，这样就不会下载多余的瓦片，往往这些多余的瓦片数量是不需要的。如果瓦片还是过多，建议再细分区域下载，比如一个省的可能太多，逐个按照市区来下载，一般是大级别的才会有很多瓦片。
+6. 天地图每个秘钥每天的下载数量有限制。个人开发者限制在1W张，企业开发者限制在30W张，可以切换到账号后台 https://console.tianditu.gov.cn/api/traffic 查看具体限制。建议多申请几个秘钥，在MapDownHelper::initUrl()函数中加入多个秘钥，下载的时候会自动切换秘钥下载，这样可以下载的张数多一些。还有就是下载的时候尽量分区域下载，不然你都不知道下载到哪里失败了，以便下次继续下载。
+7. 谷歌瓦片地图下载有可能需要翻墙才能使用。
+8. 如果加载下载好的离线地图没有看到，只有一种可能，那就是当前级别当前范围的离线地图没有下载，你需要鼠标滚轮缩放和拖动到你下载的区域和级别才能看到，那问题来了，都没有图片也不知道拖到哪里了，所有就需要下载离线地图的时候，先下载大致的全国地图的轮廓，也不多，比如全国的下载到12级别，这样就可以拖动到对应的省份市区等。
+9. 下载好的地图文件使用方法看本文档中的离线地图使用说明。
 
 ### 4.4 省市轮廓
 ![](snap/map400.jpg)
@@ -364,8 +367,15 @@ int main(int argc, char *argv[])
 2. 可以切换顺时针还是逆时针旋转。
 3. 可以切换每次移动的步长。
 
-### 4.9 网页控件
+### 4.9 海拔高程
 ![](snap/map900.jpg)
+
+1. 本示例演示实时海拔高程数据。
+2. 本地离线读取，传入的经纬度获取海拔高度值。
+3. 精确度1000米，可以去官网下载更详细的区域地图高程数据，精度更高。
+
+### 4.x 网页控件
+![](snap/map1000.jpg)
 
 1. 本示例演示通用浏览器控件如何使用。
 2. 单击打开网页，直接打开输入的网页地址。
@@ -379,7 +389,7 @@ int main(int argc, char *argv[])
 - 目前发现如果使用webengine浏览器模块，天地图的dblclick双击事件有bug，会触发两次，官网的示例也是一样的bug。webkit和miniblink内核正常，应该属于天地图和浏览器底层兼容性问题。因为百度地图等其他地图在webengine下双击事件正常。
 
 ### 5.2 函数列表
-- addMarkerEvent(flag, action, event, tips, width)，用于添加标注点事件/单击/双击/右键，flag表示标注点的唯一标识，action表示动作，0=不处理，1-内部弹窗，2-发信号通知。event表示事件类型，click-单击，dblclick-双击，rightclick-右键，contextmenu-天地图右键，tips用于内部处理弹出提示的内容，可以是html字符串。width表示内部弹窗最小宽度。
+- addMarkerEvent(flag, action, event, tips, width)，用于添加标注点事件/单击/双击/右键，flag表示标注点的唯一标识，action表示动作，0=不处理，1-内部弹窗，2-发信号通知。event表示事件类型，click-单击，dblclick-双击，rightclick-右键，tips用于内部处理弹出提示的内容，可以是html字符串。width表示内部弹窗最小宽度。
 - 每次添加事件的时候内部会先移除同名的事件，可以添加多个事件，比如单击和右键同时存在。 
 
 ### 5.3 事件说明
@@ -443,11 +453,11 @@ void frmMapDemo::receiveDataFromJs(const QString &type, const QVariant &data)
 |distanceend|188|地图测距完成触发，返回对应总距离，单位米。|
 |overlayinfo|flag\|point/points等|调用getOverlayInfo函数触发，获取覆盖物信息，对应标识可以是marker/circle/polyline/polygon，如果是标注点则返回经纬度坐标，如果是多边形则返回坐标集合，圆形则依次是中心点/半径/边缘坐标集合。多个覆盖物则每个都会触发一次。|
 |pointcollection|lnglat|单击点聚合中的某个点触发。|
-|marker|flag\|event|鼠标单击双击右键标注点触发，event=click/dblclick/rightclick/天地图右键是contextmenu|
-|polyline|flag\|event|鼠标单击双击右键折线条触发，event=click/dblclick/rightclick/天地图右键是contextmenu|
-|polygon|flag\|event|鼠标单击双击右键多边形触发，event=click/dblclick/rightclick/天地图右键是contextmenu|
-|rectangle|flag\|event|鼠标单击双击右键矩形触发，event=click/dblclick/rightclick/天地图右键是contextmenu|
-|circle|flag\|event|鼠标单击双击右键圆形触发，event=click/dblclick/rightclick/天地图右键是contextmenu|
+|marker|flag\|event|鼠标单击双击右键标注点触发，event=click/dblclick/rightclick|
+|polyline|flag\|event|鼠标单击双击右键折线条触发，event=click/dblclick/rightclick|
+|polygon|flag\|event|鼠标单击双击右键多边形触发，event=click/dblclick/rightclick|
+|rectangle|flag\|event|鼠标单击双击右键矩形触发，event=click/dblclick/rightclick|
+|circle|flag\|event|鼠标单击双击右键圆形触发，event=click/dblclick/rightclick|
 ||||
 ||||
 
@@ -626,6 +636,24 @@ TMAP_TERRAIN_HYBRID_MAP = new T.MapType([s, r], "TMAP_TERRAIN_HYBRID_MAP")
 12. 天地图官方提供的瓦片每一种类型都分经纬度投影和球面墨卡托投影 http://lbs.tianditu.gov.cn/server/MapService.html ，我们平时一般用的是球面墨卡托投影，主流也是球面墨卡托投影。
 
 ## 10、版本说明
+
+### V202503
+1. 新增mapdraw目录，专门存放封装的各种绘制类，方便传入参数直接使用，比如雷达模拟，飞行轨迹，轨迹回放等。
+2. 新增getOverlayInfo2函数，传入类型和覆盖物对象，获取对应的信息，比如经纬度坐标，圆形还有半径，矩形则四个点等信息，方便单击或者拖曳等地方获取，发出信号通知进行处理。
+3. 新增统一的事件名转换函数，比如contextmenu纠正为rightclick，drag纠正为dragging，方便统一设置和接收处理。
+4. 精益求精，大幅度降低高程海拔数据占用的内存，从1.5G占用降低到0.15G，核心就是将之前的字符串存储的值改成qint16数据类型。
+
+### V202502
+1. 新增地图事件参数，默认地图会添加单击事件，如果还要添加其他事件，需要调用setMapEvent函数设置，参数是对应枚举值，支持多个组合，比如mapObj->setMapEvent(MapEvent_Click | MapEvent_RightClick)表示同时添加地图单击和右键事件。
+2. 新增了地图鼠标移动事件，方便实时获取高程海拔值。
+3. 新增高程海拔示例，可以直接在地图中移动，实时显示对应的高程海拔值。
+
+### V202412
+1. 将标注点单击函数重写，改成支持单击双击右键多种事件，可以同时添加多个时间，有一些应用场景需要单击执行一个动作，双击执行其他动作。
+2. 在所有覆盖物的单击事件监听基础上，增加了双击和右键的事件。
+3. 所有覆盖物单击双击右键事件通知信号参数增加事件类型，之前只有一种单击，现在新增了双击和右键，需要区分。click、dblclick、rightclick。
+4. 统一将右键传入传出参数改成了rightclick，遇到天地图，如果传入了rightclick，函数内部会自动转成contextmenu事件，传出自动转成rightclick事件，这样方便外部统一处理。
+
 ### V202410
 1. 地图类型下拉框动态加载，普通地图有街道图、卫星图、混合图，天地图有6种，多了地形图和地形混合图。
 2. 天地图删除覆盖物函数增加删除测距留下的覆盖物，参数标识定义为 distancetool。
