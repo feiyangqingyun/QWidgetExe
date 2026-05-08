@@ -863,17 +863,19 @@
 20. 支持一键添加批量模拟28181设备，实时显示已注册和已注销状态。
 21. 支持将本地桌面、本地摄像头、任意视频文件、视频流文件、手机摄像头等转换成28181设备，添加到NVR或者国标软件平台。
 22. sip协议同时支持udp和tcp两种通信方式，视频点播同时支持udp/tcp主动/tcp被动三种方式，涵盖所有可能的场景需求。
-23. 无论是onvif设备模拟组件还是28181设备模拟组件，全部原创底层协议解析，纯Qt实现，跨任意平台。
-24. 代码结构框架非常清晰，注释详细，代码精简不繁琐，非常易于学习和移植，可以很容易拓展其他接口需求。
-25. 支持Qt4/Qt5/Qt6以及后续所有版本、所有编译器、所有开发环境。
-26. 支持windows、linux、mac、国产OS、嵌入式linux、RK3588、树莓派、香橙派等系统。
+23. 提供云台控制信号，上下左右等8个方位移动，拉近拉远等，对应XYZ的值。
+24. 提供预置位相关操作信号，获取预置位、添加预置位、调用预置位、删除预置位等。
+25. onvif模拟支持主码流和子码流分别对应不同的采集源，比如桌面屏幕采集主码流和子码流对应不同的分辨率。
+26. 无论是onvif设备模拟组件还是28181设备模拟组件，全部原创底层协议解析，纯Qt实现，跨任意平台。
+27. 代码结构框架非常清晰，注释详细，代码精简不繁琐，非常易于学习和移植，可以很容易拓展其他接口需求。
+28. 支持Qt4/Qt5/Qt6以及后续所有版本、所有编译器、所有开发环境。
+29. 支持windows、linux、mac、国产OS、嵌入式linux、RK3588、树莓派、香橙派等系统。
 
 ### 24.2 效果图
 ![](snap_video_simulate/video_simulate_onvif1.jpg)
-![](snap_video_simulate/video_simulate_onvif2.jpg)
-![](snap_video_simulate/video_simulate_onvif3.jpg)
 ![](snap_video_simulate/video_simulate_onvif4.jpg)
 ![](snap_video_simulate/video_simulate_gb1.jpg)
+![](snap_video_simulate/video_simulate_gb4.jpg)
 
 ## 25 地图控件示例
 ### 25.1 功能特点
